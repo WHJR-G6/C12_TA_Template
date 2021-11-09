@@ -42,13 +42,27 @@ function spawnPlatform(){
 
   if(frameCount % 60 ===0){
   
-  var platforms = createSprite(250,0,50,50);
-  
+    var platforms = createSprite(250,0,50,50);
   platforms.velocityY = 4;
 
-  platforms.addImage(platform_image);
+  var r = Math.round(random(1,6))
+  switch (r){
+    case 1 : platforms.addImage(platform1);
+    break;
+    case 2 : platforms.addImage(platform2);
+    break;
+    case 3 : platforms.addImage(platform3);
+    break;
+    case 4 : platforms.addImage(platform4);
+    break;
+    
+      
+      
+      
+  }
+  platforms.collide(jack);
+  platforms.scale = 0.1;
 
-  platforms.scale = 0.15;
-  
+  platforms.x = random(0,500);
   }
 }
