@@ -1,7 +1,7 @@
 var player,player2;
 var platform,platform2;
 var player_image, platform_image;
-
+var platform1,platform2,platform3,platform4,platform5,platform6;
 function preload(){
   player_image=loadImage("images/jack2.png")
   platform_image = loadImage("images/p1.png");
