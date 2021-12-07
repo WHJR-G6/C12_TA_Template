@@ -5,8 +5,7 @@ var platform1,platform2,platform3,platform4,platform5,platform6;
 function preload(){
   player_image=loadImage("images/jack2.png")
   platform_image = loadImage("images/p1.png");
-  player2_image=loadImage("images/jack2.png")
-  platform2_image = loadImage("images/p2.png");
+  
 }
 
 function setup() {
