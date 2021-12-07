@@ -45,7 +45,7 @@ function spawnPlatform(){
     var platforms = createSprite(250,0,50,50);
   platforms.velocityY = 4;
 
-  var r = Math.round(random(1,6))
+ 
   switch (r){
     case 1 : platforms.addImage(platform1);
     break;
@@ -56,13 +56,10 @@ function spawnPlatform(){
     case 4 : platforms.addImage(platform4);
     break;
     
-      
-      
-      
+     
   }
   platforms.collide(jack);
   platforms.scale = 0.1;
-
-  platforms.x = random(0,500);
+ 
   }
 }
